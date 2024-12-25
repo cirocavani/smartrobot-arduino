@@ -7,6 +7,7 @@ Arduino Nano RP2040 Connect
 ## Examples
 
 1. [Control Built-in RGB LED over Wi-Fi with Nano RP2040 Connect](./rp2040-web-server-rgb/README.md)
+2. [Accessing IMU Data on Nano RP2040 Connect](./rp2040-imu-basics/README.md)
 
 ## Documentation
 

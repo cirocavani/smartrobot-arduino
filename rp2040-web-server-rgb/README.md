@@ -6,14 +6,22 @@ Learn how to set up your board as a web server, allowing other clients to connec
 
 ## Sketch
 
-1. Open Board Manager
-2. Search 'Arduino Mbed OS Nano Boards'
-3. Install (latest version 4.2.1)
-4. Open Library Manager
-5. Search WiFiNINA
-6. Install (latest version 1.8.14)
-
-New Tab `wifi_secrets.h`.
+1. Open `rp2040-web-server-rgb.ino`
+2. Boad setup [once]
+    1. Open Board Manager
+    2. Search 'Arduino Mbed OS Nano Boards'
+    3. Install (latest version 4.2.1)
+3. Wifi library [once]
+    1. Open Library Manager
+    2. Search 'WiFiNINA'
+    3. Install (latest version 1.8.14)
+4. Wifi configuration
+    1. New Tab `wifi_secrets.h`
+    2. Set network name and password (content below)
+5. Deploy
+    1. Verify
+    2. Upload
+6. Open board IP Address on a Browser (HTTP)
 
 `wifi_secrets.h` content.
 

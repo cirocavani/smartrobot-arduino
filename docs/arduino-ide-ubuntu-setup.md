@@ -100,7 +100,7 @@ sudo "/home/cavani/.arduino15/packages/arduino/hardware/mbed_nano/4.2.1/post_ins
 ## Libraries
 
 1. Open Library Manager
-2. Search WiFiNINA
+2. Search 'WiFiNINA'
 3. Install (latest version 1.8.14)
 
 ```text
