@@ -17,17 +17,16 @@ grep \.local ~/.bashrc
 
 # export PATH=$HOME/.local/bin:$PATH
 
-curl -LO https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.4_Linux_64bit.zip
+curl -sSfLO https://github.com/arduino/arduino-ide/releases/download/2.3.5/arduino-ide_2.3.5_Linux_64bit.zip
 
-mkdir -p ~/.local/arduino-ide_2.3.4_Linux_64bit/
+unzip -d ~/.local arduino-ide_2.3.5_Linux_64bit.zip
 
-unzip -d ~/.local/arduino-ide_2.3.4_Linux_64bit/arduino-ide_2.3.4_Linux_64bit.zip
-
-rm arduino-ide_2.3.4_Linux_64bit.zip
+rm arduino-ide_2.3.5_Linux_64bit.zip
 
 mkdir -p ~/.local/bin
 
-ln -s ~/.local/arduino-ide_2.3.4_Linux_64bit/arduino-ide ~/.local/bin/arduino-ide
+# rm ~/.local/bin/arduino-ide
+ln -s ~/.local/arduino-ide_2.3.5_Linux_64bit/arduino-ide ~/.local/bin/arduino-ide
 
 echo 'SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", GROUP="plugdev", MODE="0666"' > 99-arduino.rules
 
@@ -109,6 +108,15 @@ WiFiNINA@1.8.14
 Installing WiFiNINA@1.8.14
 Installed WiFiNINA@1.8.14
 ```
+
+## Firmware Update
+
+<https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-fw-cert-uploader/>
+
+1. Open Firmware Updater (Tools)
+2. Select Board 'Arduino Nano RP2040 Connect'
+3. 'Check Updates' button
+4. 'Install' button (latest version 1.5.0)
 
 ## Sketch
 
