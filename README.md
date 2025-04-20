@@ -1,4 +1,4 @@
-# Programmable Matter - Arduino Experimental Project
+# Smart Robot - Arduino Experimental Project
 
 Arduino Nano RP2040 Connect
 
